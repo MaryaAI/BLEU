@@ -144,6 +144,10 @@ To run the metric over a translation corpus and a reference corpus, run the foll
 ```bash
 $ python bleu_metric.py translation ref1 ref2 ...
 ```
+To run the metric over a translation corpus and a reference corpus 2022, run the following command:
+```bash
+$  python bleu_score.py -t tr.txt -r ref.txt -n 3 --type bleu -p ./out
+```
 We prepare two examples in the folder `testdata/` from the original paper.
 They are two candidate translations and three reference translations.
 
