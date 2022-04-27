@@ -21,7 +21,7 @@ from pathlib import Path
 from bleu import *
 from bleu.utils import load_reference_corpus
 from bleu.utils import load_translation_corpus
-from agenda.metric_helper import write_score
+#from agenda.metric_helper import write_score
 
 
 def _break_into_words(line):
@@ -67,17 +67,9 @@ def eval_metric(translations, references, n, type, output_dir):
         smooth=True,
     ), type)
 
-    write_score(
-        name=name,
-        scores=scores,
-        system=system,
-        output=output,
-        params={
-            'type': type,
-            'n': n,
-            'smooth': True,
-        }
-    )
+    
+    print(scores)
+      
 
 
 if __name__ == '__main__':

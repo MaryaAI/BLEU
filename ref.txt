@@ -1,0 +1,3 @@
+The beauty of order log n is that there's a constant in there that you control.
+مرحبا بالجميع
+هيا نبدأ
