@@ -67,9 +67,11 @@ def eval_metric(translations, references, n, type, output_dir):
         smooth=True,
     ), type)
 
+    print("name: ", name)
+    print("scores of every sentence:",scores)
+    print("score of all corpus scaled on 100:",system*100)
+    print("output file",output)  
     
-    print(scores)
-      
 
 
 if __name__ == '__main__':
